@@ -130,8 +130,7 @@ weighted avg       0.88      0.63      0.69    451425
 | 50 | next_pymnt_d | date | Next scheduled payment date | Payment History |
 | 51 | last_credit_pull_d | date | The most recent date LendingClub **pulled the borrower's credit report** for this specific loan | Credit History |
 | 52 | last_fico_range_low | numeric | Lower boundary of the borrower's last FICO pulled | Credit History |
-| 53 | last_fico_range_high | numeric | Upper boundary of the borrower's last FICO pulled
-***(* context: Lenders don't just check credit score once. They often pull updates to monitor for signs of distress (like a sudden drop in FICO) while the loan is active)*** | Credit History |
+| 53 | last_fico_range_high | numeric | Upper boundary of the borrower's last FICO pulled| Credit History |
 | 54 | collections_12_mths_ex_med | numeric | Number of collections in 12 months excluding medical collections | Credit History |
 | 55 | mths_since_last_major_derog | numeric | **Months since the most recent "Major Derogatory" event** (specifically a 90-day or worse rating). | Credit History |
 | 56 | policy_code | categorical | Publicly available policy_code=1; new products not publicly available policy_code=2 | Loan Info |
