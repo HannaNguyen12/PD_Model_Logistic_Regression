@@ -29,11 +29,11 @@ For other categorical columns, I used Weight of Evidence (WoE) (with adjustment 
 
 I used the benchmark 0.02 < IV < 1, which mean features with normal - strong predictive signal in industry standard to select the features.
 
-![image.png](Credit%20Risk%20Modeling%20-%20Logistic%20Regression/image.png)
+![image.png](image.png)
 
 Those that I kept are: ['term', 'home_ownership', 'verification_status', 'initial_list_status', 'application_type']
 
-![Screenshot 2026-04-17 at 21.29.14.png](Credit%20Risk%20Modeling%20-%20Logistic%20Regression/Screenshot_2026-04-17_at_21.29.14.png)
+![image_1](image_1.png)
 
 ****sub_grade is not included in the model to avoid information leakage***
 
@@ -47,9 +47,9 @@ Set a reference data and turn them to month_since_ to convert to numeric data ty
 
 WoE/IV was applied using 10-bin splits (benchmark: 0.03 < IV < 0.5), yielding 28 numeric features. Optimal binning was then determined for each variable using a Decision Tree Classifier to identify split points that maximize separation.
 
-![Screenshot 2026-04-17 at 21.48.59.png](Credit%20Risk%20Modeling%20-%20Logistic%20Regression/Screenshot_2026-04-17_at_21.48.59.png)
+![image_2](image_2.png)
 
-![Screenshot 2026-04-17 at 21.49.45.png](Credit%20Risk%20Modeling%20-%20Logistic%20Regression/Screenshot_2026-04-17_at_21.49.45.png)
+![image_3](image_3.png)
 
 ### 2. Modeling
 
@@ -72,7 +72,7 @@ At a decision threshold of 0.3: Precision (default class): 0.24 | Recall (defaul
 weighted avg       0.88      0.63      0.69    451425
 ```
 
-![Screenshot 2026-04-17 at 21.55.16.png](Credit%20Risk%20Modeling%20-%20Logistic%20Regression/Screenshot_2026-04-17_at_21.55.16.png)
+![image_4](image_4.png)
 
 # Variable Dictionary
 
